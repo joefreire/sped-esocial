@@ -3,8 +3,8 @@
     "type": "object",
     "properties": {
         "sequencial": {
-            "required": false,
-            "type": ["integer","null"],
+            "required": true,
+            "type": "integer",
             "minimum": 1,
             "maximum": 99999
         },
@@ -162,38 +162,74 @@
                                             "maxLength": 999
                                         },
                                         "medprotecao": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         },
                                         "condfuncto": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         },
                                         "usoinint": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         },
                                         "przvalid": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         },
                                         "periodictroca": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         },
                                         "higienizacao": {
-                                            "required": true,
+                                            "required": false,
                                             "type": "string",
                                             "pattern": "^(S|N)$"
                                         }
                                     }
                                 }
-                            }    
+                            },  
+                            "epicompl": {
+                            "required": true,
+                            "type": "object",
+                                "properties": {
+                                        "medprotecao": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        },
+                                        "condfuncto": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        },
+                                        "usoinint": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        },
+                                        "przvalid": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        },
+                                        "periodictroca": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        },
+                                        "higienizacao": {
+                                            "required": false,
+                                            "type": "string",
+                                            "pattern": "^(S|N)$"
+                                        }
+                                    }  
+                            }  
                         }
                     }
                 }    
