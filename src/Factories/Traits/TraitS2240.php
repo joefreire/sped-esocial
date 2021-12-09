@@ -455,13 +455,13 @@ trait TraitS2240
             $this->dom->addChild(
                 $agNoc,
                 "intConc",
-                isset($ag->intconc) ? $ag->intconc : null,
+                isset($ag->intconc) ? number_format($ag->intconc,4,'.','') : null,
                 false
             );
             $this->dom->addChild(
                 $agNoc,
                 "limTol",
-                isset($ag->limtol) ? $ag->limtol : null,
+                isset($ag->limtol) ? number_format($ag->limtol,4,'.','') : null,
                 false
             );
             $this->dom->addChild(
@@ -520,42 +520,43 @@ trait TraitS2240
                             false
                         );
                         $epcEpi->appendChild($epi);
-
+                    }
+                    if (isset($ag->epcepi->epicompl)) {
                         $epiCompl = $this->dom->createElement("epiCompl");
                         $this->dom->addChild(
                             $epiCompl,
                             "medProtecao",
-                            $e->medprotecao,
+                            $ag->epcepi->epicompl->medprotecao,
                             true
                         );
                         $this->dom->addChild(
                             $epiCompl,
                             "condFuncto",
-                            $e->condfuncto,
+                            $ag->epcepi->epicompl->condfuncto,
                             true
                         );
                         $this->dom->addChild(
                             $epiCompl,
                             "usoInint",
-                            $e->usoinint,
+                            $ag->epcepi->epicompl->usoinint,
                             true
                         );
                         $this->dom->addChild(
                             $epiCompl,
                             "przValid",
-                            $e->przvalid,
+                            $ag->epcepi->epicompl->przvalid,
                             true
                         );
                         $this->dom->addChild(
                             $epiCompl,
                             "periodicTroca",
-                            $e->periodictroca,
+                            $ag->epcepi->epicompl->periodictroca,
                             true
                         );
                         $this->dom->addChild(
                             $epiCompl,
                             "higienizacao",
-                            $e->higienizacao,
+                            $ag->epcepi->epicompl->higienizacao,
                             true
                         );
                         $epcEpi->appendChild($epiCompl);
