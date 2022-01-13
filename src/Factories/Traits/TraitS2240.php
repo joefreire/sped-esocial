@@ -455,7 +455,7 @@ trait TraitS2240
             $this->dom->addChild(
                 $agNoc,
                 "intConc",
-                isset($ag->intconc) ? $ag->intconc : null,
+                isset($ag->intconc) ? number_format($ag->intconc,4,'.','') : null,
                 false
             );
             $this->dom->addChild(
