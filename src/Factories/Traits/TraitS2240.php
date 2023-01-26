@@ -574,7 +574,7 @@ trait TraitS2240
         foreach ($this->std->respreg as $r) {
             $respReg = $this->dom->createElement("respReg");
 
-            if(!empty($r->cpfresp)){
+            if( !empty($r->cpfresp)) {
                 $this->dom->addChild(
                     $respReg,
                     "cpfResp",
@@ -582,31 +582,32 @@ trait TraitS2240
                     true
                 );
             }
-            
-            $this->dom->addChild(
-                $respReg,
-                "ideOC",
-                $r->ideoc,
-                true
-            );
-            $this->dom->addChild(
-                $respReg,
-                "dscOC",
-                !empty($r->dscoc) ? $r->dscoc : null,
-                false
-            );
-            $this->dom->addChild(
-                $respReg,
-                "nrOC",
-                $r->nroc,
-                true
-            );
-            $this->dom->addChild(
-                $respReg,
-                "ufOC",
-                $r->ufoc,
-                true
-            );
+            if( !empty($r->ideOC)) {
+                $this->dom->addChild(
+                    $respReg,
+                    "ideOC",
+                    $r->ideoc,
+                    true
+                );
+                $this->dom->addChild(
+                    $respReg,
+                    "dscOC",
+                    !empty($r->dscoc) ? $r->dscoc : null,
+                    false
+                );
+                $this->dom->addChild(
+                    $respReg,
+                    "nrOC",
+                    $r->nroc,
+                    true
+                );
+                $this->dom->addChild(
+                    $respReg,
+                    "ufOC",
+                    $r->ufoc,
+                    true
+                );
+            }
             $info->appendChild($respReg);
         }
 
