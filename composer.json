@@ -1,5 +1,5 @@
 {
-    "name": "nfephp-org/sped-esocial",
+    "name": "joefreire/sped-esocial",
     "type": "library",
     "description": "e-Social library",
     "homepage": "https://github.com/nfephp-org/sped-esocial",
@@ -34,7 +34,7 @@
         "ext-xml": "*",
         "nfephp-org/sped-common" : "^5.0",
         "justinrainbow/json-schema": "^5.2",
-        "league/flysystem": "^1.0"
+        "league/flysystem": "^1.0|^3.8"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.4",

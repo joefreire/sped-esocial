@@ -19,6 +19,17 @@
             "type": ["string","null"],
             "$ref": "#/definitions/recibo"
         },
+        "tpinsc": {
+            "required": false,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+        },
+        "nrinsc": {
+            "required": false,
+            "type": "string",
+            "pattern": "^[0-9]{8,14}$"
+        },
         "cpftrab": {
             "required": true,
             "type": "string",
@@ -26,9 +37,7 @@
         },
         "matricula": {
             "required": false,
-            "type": ["string","null"],
-            "minLength": 1,
-            "maxLength": 30
+            "type": ["string","null"]
         },
         "codcateg": {
             "required": false,
