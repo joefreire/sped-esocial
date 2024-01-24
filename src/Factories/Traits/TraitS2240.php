@@ -880,30 +880,42 @@ trait TraitS2240
                 );
             }
 
-            $this->dom->addChild(
-                $respReg,
-                "ideOC",
-                !empty($r->ideoc) ? $r->ideoc : null,
-                true
-            );
-            $this->dom->addChild(
-                $respReg,
-                "dscOC",
-                !empty($r->dscoc) ? $r->dscoc : null,
-                false
-            );
-            $this->dom->addChild(
-                $respReg,
-                "nrOC",
-                !empty($r->nroc) ? $r->nroc : null,
-                true
-            );
-            $this->dom->addChild(
-                $respReg,
-                "ufOC",
-                !empty($r->ufoc) ? $r->ufoc : null,
-                true
-            );
+            if(!empty($r->ideoc)){
+                $this->dom->addChild(
+                    $respReg,
+                    "ideOC",
+                    !empty($r->ideoc) ? $r->ideoc : null,
+                    true
+                );
+            }
+            
+            if(!empty($r->dscoc)){
+                $this->dom->addChild(
+                    $respReg,
+                    "dscOC",
+                    !empty($r->dscoc) ? $r->dscoc : null,
+                    false
+                );
+            }
+            
+            if(!empty($r->nroc)){
+                $this->dom->addChild(
+                    $respReg,
+                    "nrOC",
+                    !empty($r->nroc) ? $r->nroc : null,
+                    true
+                );
+            }
+            
+            if(!empty($r->ufoc)){
+                $this->dom->addChild(
+                    $respReg,
+                    "ufOC",
+                    !empty($r->ufoc) ? $r->ufoc : null,
+                    true
+                );
+            }
+            
             $info->appendChild($respReg);
         }
 
