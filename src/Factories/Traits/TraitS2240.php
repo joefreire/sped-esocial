@@ -883,7 +883,7 @@ trait TraitS2240
             $this->dom->addChild(
                 $respReg,
                 "ideOC",
-                $r->ideoc,
+                !empty($r->ideoc) ? $r->ideoc : null,
                 true
             );
             $this->dom->addChild(
@@ -895,13 +895,13 @@ trait TraitS2240
             $this->dom->addChild(
                 $respReg,
                 "nrOC",
-                $r->nroc,
+                !empty($r->nroc) ? $r->nroc : null,
                 true
             );
             $this->dom->addChild(
                 $respReg,
                 "ufOC",
-                $r->ufoc,
+                !empty($r->ufoc) ? $r->ufoc : null,
                 true
             );
             $info->appendChild($respReg);
