@@ -56,7 +56,7 @@ $jsonSchema = '{
             "required": true,
             "type": "object",
             "properties": {
-                "dtexam": {
+                "dtexame": {
                     "required": true,
                     "type": "string",
                     "pattern": "^(19[0-9][0-9]|2[0-9][0-9][0-9])[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12][0-9]|3[01])$"
@@ -103,7 +103,7 @@ $std->idevinculo->cpftrab = '11111111111';
 $std->idevinculo->matricula = '11111111111';
 
 $std->toxicologico = new \stdClass();
-$std->toxicologico->dtexam = '2024-08-01';
+$std->toxicologico->dtexame = '2024-08-01';
 $std->toxicologico->cnpjlab = '11111111111111';
 $std->toxicologico->codseqexame = 'aB000000000';
 $std->toxicologico->cpfmed = '12345678901';
