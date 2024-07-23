@@ -68,44 +68,44 @@ trait TraitS2221
         /**
          * Informações do exame toxicológico do motorista profissional.
          */
-        $exToxic = $this->dom->createElement("toxicologico");
+        $toxicologico = $this->dom->createElement("toxicologico");
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "dtExame",
-            $this->std->dtexame,
+            $this->std->toxicologico->dtexame,
             true
         );
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "cnpjLab",
-            $this->std->cnpjlab,
+            $this->std->toxicologico->cnpjlab,
             true
         );
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "codSeqExame",
-            $this->std->codseqexame,
+            $this->std->toxicologico->codseqexame,
             true
         );
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "nmMed",
-            $this->std->nmmed,
+            $this->std->toxicologico->nmmed,
             true
         );
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "nrCRM",
-            $this->std->nrcrm,
+            $this->std->toxicologico->nrcrm,
             true
         );
         $this->dom->addChild(
-            $exToxic,
+            $toxicologico,
             "ufCRM",
-            $this->std->ufcrm,
+            $this->std->toxicologico->ufcrm,
             true
         );
-        $this->node->appendChild($exToxic);
+        $this->node->appendChild($toxicologico);
 
         //finalização do xml
         $this->eSocial->appendChild($this->node);
