@@ -72,37 +72,37 @@ trait TraitS2221
         $this->dom->addChild(
             $exToxic,
             "dtExame",
-            $this->std->extoxic->dtexame,
+            $this->std->dtexame,
             true
         );
         $this->dom->addChild(
             $exToxic,
             "cnpjLab",
-            $this->std->extoxic->cnpjlab,
+            $this->std->cnpjlab,
             true
         );
         $this->dom->addChild(
             $exToxic,
             "codSeqExame",
-            $this->std->extoxic->codseqexame,
+            $this->std->codseqexame,
             true
         );
         $this->dom->addChild(
             $exToxic,
             "nmMed",
-            $this->std->extoxic->nmmed,
+            $this->std->nmmed,
             true
         );
         $this->dom->addChild(
             $exToxic,
             "nrCRM",
-            $this->std->extoxic->nrcrm,
+            $this->std->nrcrm,
             true
         );
         $this->dom->addChild(
             $exToxic,
             "ufCRM",
-            $this->std->extoxic->ufcrm,
+            $this->std->ufcrm,
             true
         );
         $this->node->appendChild($exToxic);
