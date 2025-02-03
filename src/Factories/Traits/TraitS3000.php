@@ -93,4 +93,9 @@ trait TraitS3000
     {
         return $this->toNodeS100();
     }
+
+    protected function toNodeS130()
+    {
+        return $this->toNodeS120();
+    }
 }

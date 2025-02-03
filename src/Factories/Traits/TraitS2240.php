@@ -935,4 +935,9 @@ trait TraitS2240
         //$this->xml = $this->dom->saveXML($this->eSocial);
         $this->sign();
     }
+
+    protected function toNodeS130()
+    {
+        return $this->toNodeS120();
+    }
 }

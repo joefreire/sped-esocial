@@ -129,4 +129,13 @@ trait TraitS2221
     {
         return $this->toNodeS100();
     }
+
+    
+    /**
+     * builder for version S.1.3.0
+     */
+    protected function toNodeS130()
+    {
+        return $this->toNodeS100();
+    }
 }
