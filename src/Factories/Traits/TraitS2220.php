@@ -81,12 +81,14 @@ trait TraitS2220
             $stdaso->dtaso,
             true
         );
-        $this->dom->addChild(
-            $aso,
-            "resAso",
-            $stdaso->resaso,
-            true
-        );
+        if(!empty($stdaso->resaso)){
+            $this->dom->addChild(
+                $aso,
+                "resAso",
+                $stdaso->resaso,
+                true
+            );
+        }
 
         foreach ($this->std->exmedocup->aso->exame as $exa) {
             $exame = $this->dom->createElement("exame");
